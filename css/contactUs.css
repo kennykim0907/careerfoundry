@@ -1,0 +1,232 @@
+/*THE FIRST CODE HERE, IS CSS RESET STYLING*/
+/*OUR CODE STARTS FURTHER DOWN THE DOCUMENT*/
+
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+hr {
+    display:block;
+    height:1px;
+    border:0;
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,900&display=swap');
+
+/*OUR CODE STARTS HERE!!! - MY CODE*/
+
+/*ALL HTML elements gets this styling*/
+* {
+  text-decoration: none;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.section-title {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 40px;
+}
+
+.section-title h1 {
+    display: inline-block;
+    font-size: 35px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #000000;
+    margin: 0 0 10px;
+    position: relative;
+}
+
+.section-title h1:before {
+    content: '';
+    left: 0;
+    position: absolute;
+    height: 2px;
+    right: 2%;
+    background-color: #febd01;
+    bottom: 0px;
+}
+
+.section-title text-center {
+    text-align: center!important;
+}
+
+.section-title text-left {
+    text-align: left!important;
+}
+
+.section-title text-center {
+    text-align: right!important;
+}
+
+/*Here we style the header for the mobile version*/
+header {
+    background-color: #fff;
+    width: 100%;
+    height: 100px;
+  }
+
+  header .header-brand {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight: bolder;
+    color: #111;
+    text-transform: uppercase;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px 0;
+  }
+
+  header nav ul {
+    display: block;
+    margin: 0 auto;
+    width: fit-content;
+  }
+
+  header nav ul li {
+    display: inline-block;
+    float: left;
+    list-style: none;
+    padding: 0 16px;
+  }
+
+  header nav ul li a {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #111;
+    text-transform: uppercase;
+  }
+
+  header .header-logo {
+    display: none;
+  }
+
+  /*Here we style the header for the desktop version*/
+  @media only screen and (min-width: 1000px) {
+    header .header-brand {
+      margin: 31px 0;
+      text-align: left;
+      line-height: 38px;
+      padding: 0 20px 0 40px;
+      border-right: 3px solid #111;
+      float: left;
+    }
+
+    header nav ul {
+      margin: 20px 0px 0px 20px;
+      float: left;
+    }
+
+    header nav ul li a {
+      line-height: 60px;
+    }
+
+    header .header-logo {
+      display: block;
+      font-family: 'Roboto', sans-serif;
+      font-size: 16px;
+      color: #111;
+      text-transform: uppercase;
+      line-height: 38px;
+      border: 1.5px solid #111;
+      border-radius: 5px;
+      float: right;
+      margin-right: 40px;
+      margin-top: 30px;
+      padding: 0 20px;
+    }
+  }
+
+/*Portfolio Contact us*/
