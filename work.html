@@ -16,7 +16,7 @@
     <a href="index.html" class="header-brand">WM</a>
     <nav>
       <ul>
-        <li><a href="work.html">Work</a></li>
+        <li><a href="work.html">Cases</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
@@ -36,39 +36,39 @@
           <div class="filter-buttons">
             <ul id="filter-btns">
               <li class="active" data-target="all">All</li>
-              <li data-target="work1">Project 1</li>
-              <li data-target="work2">Project 2</li>
-              <li data-target="work3">Project 3</li>
+              <li data-target="project01">Project01</li>
+              <li data-target="project02">Project02</li>
+              <li data-target="project03">Project03</li>
             </ul>
           </div>
         </div>
         <div class="row">
           <div class="portfolio-gallery">
-            <div class="item" data-id="work1">
-                <div class="inner">
-                    <img src="img/lateNightSnack.png" alt="portfolio">
-                    <div class="overlay">
-                        <span class="fa fa-plus"></span>
-                        <h4>Project 1</h4>
-                    </div>
-              </div>
-            </div>
-            <div class="item" data-id="work2">
-                <div class="inner">
-                    <img src="img/planner.png" alt="portfolio">
-                    <div class="overlay">
-                        <span class="fa fa-plus"></span>
-                        <h4>Project 2</h4>
-                    </div>
+            <div class="item" data-id="project01">
+              <div class="inner">
+                <img src="img/lateNightSnack.png" alt="portfolio">
+                <div class="overlay">
+                    <span class="fa fa-plus"></span>
+                    <h4>Project 1</h4>
                 </div>
               </div>
-              <div class="item" data-id="work3">
+            </div>
+            <div class="item" data-id="project02">
+              <div class="inner">
+                <img src="img/planner.png" alt="portfolio">
+                <div class="overlay">
+                    <span class="fa fa-plus"></span>
+                    <h4>Project 2</h4>
+                </div>
+              </div>
+            </div>
+              <div class="item" data-id="project03">
                 <div class="inner">
-                    <img src="img/wordOfMouth.png" alt="portfolio">
-                    <div class="overlay">
-                        <span class="fa fa-plus"></span>
-                        <h4>Project 3</h4>
-                    </div>
+                  <img src="img/wordOfMouth.png" alt="portfolio">
+                  <div class="overlay">
+                      <span class="fa fa-plus"></span>
+                      <h4>Project 3</h4>
+                  </div>
                 </div>
               </div>
           </div>
@@ -77,9 +77,71 @@
     </section>
     <!--End Portfolio Work-->
 
+    <!--Start Lightbox-->
+    <div class="lightbox hide">
+      <span class="close-lightbox fa fa-close"></span>
+      <img src="img/lateNightSnack.png" alt="portfolio">
+    </div>
+    <!--End Lightbox-->
+
+
+
+  <script>
+    //gallery item filter
+    const filterButtons=document.querySelector("#filter-btns").children;
+    const items=document.querySelector(".portfolio-gallery").children;
+
+
+    for(let i=0; i<filterButtons.length; i++){
+      filterButtons[i].addEventListener("click" ,function(){
+        for(let j=0; j<filterButtons.length; j++) {
+          filterButtons[j].classList.remove("active")
+        }
+        this.classList.add("active");
+        const target=this.getAttribute("data-target")
+
+        for(let k=0; k<items.length; k++){
+          items[k].style.display="none";
+          if(target==items[k] .getAttribute("data-id"))
+          {
+            items[k].style.display="block";
+          }
+          if(target=="all") {
+            items[k].style.display="block";
+          }
+        }
+
+      })
+    }
+
+    //lightbox
+    const closeLightbox=document.querySelector(".close-lightbox");
+    const lightbox=document.querySelector(".lightbox");
+    const lightboxImage=lightbox.querySelector("img")
+
+      lightbox.addEventListener("click",function(){
+        if(event.target!=lightboxImage){
+          lightbox.classList.remove("show");
+        lightbox.classList.add("hide");
+        }
+      })
+
+      closeLightbox.addEventListener("click",function(){
+        lightbox.classList.remove("show");
+        lightbox.classList.add("hide");
+      })
+
+    const gallery=document.querySelector(".portfolio-gallery");
+    const galleryItem=gallery.querySelectorAll(".item");
+
+    galleryItem.forEach(function(element){
+      element.querySelector(".fa-plus").addEventListener("click",function(){
+        lightbox.classList.remove("hide");
+        lightbox.classList.add("show");
+        lightboxImage.src=element.querySelector("img").getAttribute("src");
+      })
+    })
+
+  </script>
   </body>
-  <script src="js/script.js"></script>
   </html>
-
-
-
