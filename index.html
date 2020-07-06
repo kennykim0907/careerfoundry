@@ -1,104 +1,137 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/indexc.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/d3440c13a5.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/indexc.js" defer></script>
+    <title>Home</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="navbar_logo">
+          <i class="fab fa-apple"></i>
+          <a href="#">WM</a>
+        </div>
 
-<head>
-  <meta charset="utf-8">
-  <title>Home</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/home.css">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/d3440c13a5.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-</head>
-
-<body>
-  <header>
-      <nav class="nav-main">
-          <a href="index.html" class="header-brand">WM</a>
-          <div class="toggle"></div>
-          <div class="overlay"></div>
-          <div class="menu">
-            <ul>
-              <li><a href="work.html">Cases</a></li>
-              <li><a href="about.html">About</a></li>
-              <li><a href="contact.html">Contact</a></li>
-          </ul>
-          </div>
-          <a href="files/resume.pdf" target="_blank" class="header-logo">Resume</a>
+        <ul class="navbar_menu">
+          <li><a href="about.html">About</a></li>
+          <li><a href="work.html">Cases</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <a href="#" class="navbar_toggleBtn"><i class="fas fa-bars"></i></a>
       </nav>
-  </header>
-  <main>
-    <section class="index-banner">
-      <div class="vertical-center">
-        <h2>I AM A FREELANCE UX<br>DESIGNER</h2>
-        <h1>With specialty in front-end development, functionality, UI design, and Search Engine Optimization.</h1>
-      </div>
-    </section>
-    <section class="container">
-      <h2>My Work</h2>
-      <div class="flexbox-1">
-        <img class="caseImg1" src="img/workCoverLateNight.png" alt="case1">
-        <article class="caseCtn1">
-          <p>The app is a recipe app that provides a list of late-night snack recipes.<br>
-          <br>
-          Users will be able to track their food consumption and find a list of stores that are open at night time.</p>
-          <div class="viewCaseBtn-1">
-            <a href="#" target="_blank">VIEW CASE</a>
+    </header>
+
+    <main>
+      <section class="index_banner">
+        <div class="banner_content">
+          <h1>I AM A FREELANCE UX<br />DESIGNER</h1>
+          <h2>
+            with specialty in front-end development, functionality, UI design,
+            and Search Engine Optimization.
+          </h2>
+        </div>
+      </section>
+      <section class="index_case1">
+        <div class="case_img1">
+          <img src="img/wordOfMouth.png" />
+        </div>
+        <div class="case_text1">
+          <h1>World of Mouth</h1>
+          <p>
+            It allows them to get connected with a local expert and ask any
+            questions about the culture of the city in order to discover his or
+            her favorite restaurants and activities.
+          </p>
+          <div class="btnContainer">
+            <button class="btn">More Details</button>
           </div>
-        </article>
-      </div>
-      <div class="flexbox-2">
-        <img class="caseImg2" src="img/workCoverWordOfMouth.png" alt="case2">
-        <article class="caseCtn2">
-          <p>"Word of Mouth" is a travel guide app that helps people plan a trip to a city.<br>
-          <br>
-          It allows them to get connected with a local expert and ask any questions about the culture of the city in order to discover his or her favorite restaurants and activities.</p>
-          <div class="viewCaseBtn-2">
-            <a href="#" target="_blank">VIEW CASE</a>
+        </div>
+      </section>
+      <section class="index_case2">
+        <div class="case_img2">
+          <img src="img/lateNightSnack.png" />
+        </div>
+        <div class="case_text2">
+          <h1>Late-night Snack</h1>
+          <p>
+            It allows users to track their food consumption and find a list of
+            stores that are open late at night for emergency ingredient
+            purchases. They can also find specific recipes based on their
+            ingredients at home if any.
+          </p>
+          <div class="btnContainer">
+            <button class="btn">More Details</button>
           </div>
-        </article>
+        </div>
+      </section>
+      <section class="index_case3">
+        <div class="case_img3">
+          <img src="img/planner.png" />
+        </div>
+        <div class="case_text3">
+          <h1>Planner</h1>
+          <p>
+            It allows users to manage their tasks from a smartphone, tablet, and
+            computer.
+          </p>
+          <div class="btnContainer">
+            <button class="btn">More Details</button>
+          </div>
+        </div>
+      </section>
+      <div class="videoWrapper">
+        <iframe
+          src="https://www.youtube.com/embed/zNtE-QnFc3E"
+          frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
       </div>
-    </section>
-    <div class="videoWrapper">
-      <h1>Swift Code Demonstration</h1>
-      <div class="videoWrapper2">
-        <iframe src="https://www.youtube.com/embed/zNtE-QnFc3E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <div class="wrapper">
+        <footer>
+          <ul class="footer-links-main">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Cases</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">About me</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+          <ul class="footer-links-cases">
+            <li>
+              <p>Latest cases</p>
+            </li>
+            <li><a href="#">MALING SHAOLIN - WEB DEVELOPMENT</a></li>
+            <li><a href="#">EXCELLENTO - WEB DEVELOPMENT, SEO</a></li>
+            <li><a href="#">MMTUTS - YOUTUBE CHANNEL</a></li>
+            <li><a href="#">WELTEC - VIDEO PRODUCTION</a></li>
+          </ul>
+          <div class="footer-sm">
+            <a
+              href="https://www.youtube.com/channel/UCa0HD_MsQ9ZrNSLVS_cvJgw"
+              target="_blank"
+            >
+              <img src="img/youtube-symbol.png" alt="youtube icon" />
+            </a>
+            <a href="https://twitter.com/kennykim090790" target="_blank">
+              <img src="img/twitter-logo-button.png" alt="twitter icon" />
+            </a>
+            <a href="https://www.facebook.com/kennyuxdesigner" target="_blank">
+              <img src="img/facebook-logo-button.png" alt="facebook icon" />
+            </a>
+          </div>
+        </footer>
       </div>
-    </div>
-  </main>
-  <div class="wrapper">
-    <footer>
-      <ul class="footer-links-main">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Cases</a></li>
-        <li><a href="#">Portfolio</a></li>
-        <li><a href="#">About me</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-      <ul class="footer-links-cases">
-        <li>
-          <p>Latest cases</p>
-        </li>
-        <li><a href="#">MALING SHAOLIN - WEB DEVELOPMENT</a></li>
-        <li><a href="#">EXCELLENTO - WEB DEVELOPMENT, SEO</a></li>
-        <li><a href="#">MMTUTS - YOUTUBE CHANNEL</a></li>
-        <li><a href="#">WELTEC - VIDEO PRODUCTION</a></li>
-      </ul>
-      <div class="footer-sm">
-        <a href="https://www.youtube.com/channel/UCa0HD_MsQ9ZrNSLVS_cvJgw" target="_blank">
-          <img src="img/youtube-symbol.png" alt="youtube icon">
-        </a>
-        <a href="https://twitter.com/kennykim090790" target="_blank">
-          <img src="img/twitter-logo-button.png" alt="twitter icon">
-        </a>
-        <a href="https://www.facebook.com/kennyuxdesigner" target="_blank">
-          <img src="img/facebook-logo-button.png" alt="facebook icon">
-        </a>
-      </div>
-    </footer>
-  </div>
-  <!-- <script src="js/home.js"></script> -->
-  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-  <script src="js/home.js"></script>
-</body>
+    </main>
+  </body>
 </html>
