@@ -1,7 +1,6 @@
-$(document).ready(function(){
-    $('.toggle').click(function(){
-      $('.toggle').toggleClass('active')
-      $('.overlay').toggleClass('active')
-      $('.menu').toggleClass('active')
-    })
-  })
+const toggleBtn = document.querySelector('.navbar_toggleBtn');
+const menu = document.querySelector('.navbar_menu');
+
+toggleBtn.addEventListener('click', () => {
+  menu.classList.toggle('active');
+})

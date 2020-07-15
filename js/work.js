@@ -1,4 +1,13 @@
-    //gallery item filter
+const toggleBtn = document.querySelector(".navbar_toggleBtn");
+const menu = document.querySelector(".navbar_menu");
+
+toggleBtn.addEventListener("click", () => {
+  menu.classList.toggle("active");
+});
+
+
+
+   //gallery item filter
     const filterButtons=document.querySelector("#filter-btns").children;
     const items=document.querySelector(".portfolio-gallery").children;
 
