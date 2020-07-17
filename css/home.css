@@ -9,6 +9,48 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+#clouds {
+  animation: clouds 1s ease-in-out infinite alternate;
+  transform-origin: center;
+}
+
+#bridge {
+  animation: bridge 1s ease-in-out infinite alternate;
+  transform-origin: center;
+}
+
+#waves1, #waves2 {
+  animation: bridge 1s ease infinite alternate;
+  transform-origin: center;
+}
+
+@keyframes clouds {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(15deg);
+  }
+}
+
+@keyframes bridge {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(15deg);
+  }
+}
+
+@keyframes waves1, waves2 {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(-15deg);
+  }
+}
+
 a {
   text-decoration: none;
   color: white;
