@@ -6,55 +6,32 @@
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Ubuntu', sans-serif;
 }
 
-#clouds {
-  animation: clouds 1s ease-in-out infinite alternate;
-  transform-origin: center;
+.bridger_logo {
+  width: 64px;
+  height: 64px;
 }
 
-#bridge {
-  animation: bridge 1s ease-in-out infinite alternate;
-  transform-origin: center;
+.bridger_wrap {
+  height: 0;
+  padding-top: 100%;
+  position: relative;
 }
 
-#waves1, #waves2 {
-  animation: bridge 1s ease infinite alternate;
-  transform-origin: center;
+.bridgerSvg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
-@keyframes clouds {
-  from {
-    transform: rotateY(0deg);
-  }
-  to {
-    transform: rotateY(15deg);
-  }
-}
-
-@keyframes bridge {
-  from {
-    transform: rotateY(0deg);
-  }
-  to {
-    transform: rotateY(15deg);
-  }
-}
-
-@keyframes waves1, waves2 {
-  from {
-    transform: rotateY(0deg);
-  }
-  to {
-    transform: rotateY(-15deg);
-  }
-}
-
-a {
+/* a {
   text-decoration: none;
   color: white;
-}
+} */
 
 .navbar {
   display: flex;
@@ -108,10 +85,11 @@ a {
 .index_banner {
   width: 100%;
   height: calc(100vh - 100px);
-  background-image: url(../img/banner.png);
+  background-color: #262626;
+  /* background-image: url(../img/banner.png);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  background-size: cover; */
   display: table;
 }
 
