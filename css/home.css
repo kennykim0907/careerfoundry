@@ -9,30 +9,6 @@ body {
   font-family: 'Ubuntu', sans-serif;
 }
 
-.bridger_logo {
-  width: 64px;
-  height: 64px;
-}
-
-.bridger_wrap {
-  height: 0;
-  padding-top: 100%;
-  position: relative;
-}
-
-.bridgerSvg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-/* a {
-  text-decoration: none;
-  color: white;
-} */
-
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -46,8 +22,10 @@ body {
   font-size: 24px;
 }
 
-.navbar_logo i {
-  color: black;
+.navbar_logo img {
+  width: 72px;
+  height: 72px;
+  padding: 8px 12px;
 }
 
 .navbar_logo a {
@@ -86,10 +64,6 @@ body {
   width: 100%;
   height: calc(100vh - 100px);
   background-color: #262626;
-  /* background-image: url(../img/banner.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover; */
   display: table;
 }
 
@@ -283,17 +257,16 @@ body {
 }
 /* Footer */
 footer {
-  width: calc(100% - 80px);
-  padding: 40px 40px;
+  width: 100%;
+  padding: 40px;
   margin-top: 20px;
-  background-color: #111;
+  background-color:#111;
   overflow: hidden;
 }
 
 footer ul {
   width: fit-content;
   float: left;
-  padding-left: 20px;
 }
 
 footer ul li {
@@ -328,6 +301,12 @@ footer ul li a {
     padding: 8px 24px;
   }
 
+  .navbar_logo img {
+    width: 40px;
+    height: 30px;
+    padding: 0;
+  }
+
   .navbar_menu {
     display: none;
     flex-direction: column;
@@ -351,10 +330,7 @@ footer ul li a {
   .index_banner {
     width: 100%;
     height: calc(100vh - 100px);
-    background-image: url(../img/banner.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    background-color: #262626;
     display: table;
   }
 
@@ -479,8 +455,8 @@ footer ul li a {
   }
 
   footer {
-    width: calc(100% - 80px);
-    padding: 40px 40px;
+    width: 100%;
+    padding: 40px;
     margin-top: 20px;
     background-color: #111;
     overflow: hidden;
@@ -489,7 +465,6 @@ footer ul li a {
   footer ul {
     width: fit-content;
     float: left;
-    padding-left: 20px;
   }
 
   footer ul li {
