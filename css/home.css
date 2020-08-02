@@ -6,7 +6,7 @@
 }
 
 body {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
 }
 
 .navbar {
@@ -29,7 +29,7 @@ body {
 }
 
 .navbar_logo a {
-  color: black;
+  color:#000a17
 }
 
 .navbar_menu {
@@ -43,7 +43,7 @@ body {
 }
 
 .navbar_menu li a {
-  color: black;
+  color:#000a17
 }
 
 .navbar_menu li:hover {
@@ -55,7 +55,7 @@ body {
   position: absolute;
   right: 32px;
   font-size: 24px;
-  color: black;
+  color: #000a17;
   display: none;
 }
 
@@ -63,7 +63,7 @@ body {
 .index_banner {
   width: 100%;
   height: calc(100vh - 100px);
-  background-color: #262626;
+  background-color: #000a17;
   display: table;
 }
 
@@ -78,7 +78,7 @@ body {
   line-height: 70px;
   color: #fff;
   text-align: center;
-  text-shadow: 2px 2px 2px #111;
+  text-shadow: 2px 2px 2px #000a17;
 }
 
 .index_banner h2 {
@@ -88,7 +88,7 @@ body {
   line-height: 40px;
   color: #fff;
   text-align: center;
-  text-shadow: 2px 2px 8px #111;
+  text-shadow: 2px 2px 8px #000a17;
 }
 
 /* CASE 1 */
@@ -260,7 +260,7 @@ footer {
   width: 100%;
   padding: 40px;
   margin-top: 20px;
-  background-color:#111;
+  background-color: #000a17;
   overflow: hidden;
 }
 
@@ -330,7 +330,7 @@ footer ul li a {
   .index_banner {
     width: 100%;
     height: calc(100vh - 100px);
-    background-color: #262626;
+    background-color: #000a17;
     display: table;
   }
 
@@ -345,7 +345,7 @@ footer ul li a {
     line-height: 70px;
     color: #fff;
     text-align: center;
-    text-shadow: 2px 2px 2px #111;
+    text-shadow: 2px 2px 2px #000a17;
   }
 
   .index_banner h2 {
@@ -355,7 +355,7 @@ footer ul li a {
     line-height: 40px;
     color: #fff;
     text-align: center;
-    text-shadow: 2px 2px 8px #111;
+    text-shadow: 2px 2px 8px #000a17;
   }
 
   /*CASE 1*/
@@ -458,7 +458,7 @@ footer ul li a {
     width: 100%;
     padding: 40px;
     margin-top: 20px;
-    background-color: #111;
+    background-color: #000a17;
     overflow: hidden;
   }
 
